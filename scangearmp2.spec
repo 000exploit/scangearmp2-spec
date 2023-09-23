@@ -3,18 +3,14 @@
 %define CNCP_LIBS_COM libcncpmslld2 libcncpnet2 libcncpnet20 libcncpnet30
 
 Name:           %{base_name}-sane
-Version:        4.60.0
+Version:        4.60.2
 Release:        1%{?dist}
 Summary:        Canon ScanGear MP v2 scanner utility and sane backend
 License:        GPL and custom:canon
 URL:            https://github.com/ThierryHFR/scangearmp2
-Source0:	https://github.com/ThierryHFR/scangearmp2/releases/download/%{version}/%{base_name}-%{version}.tar.gz
-BuildRequires:  cmake
-BuildRequires:  libjpeg
-BuildRequires:  sane-backends-devel
-BuildRequires:  intltool
-BuildRequires:  gtk3-devel
-Requires:	sane-backends
+Source0:	https://github.com/ThierryHFR/scangearmp2/archive/%{version}.tar.gz
+BuildRequires:  cmake libjpeg sane-backends-devel intltool gtk3-devel
+Requires:	sane-backends gtk3
 
 # Define the architecture
 %ifarch x86_64
