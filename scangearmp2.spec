@@ -21,7 +21,7 @@ ExclusiveArch:  x86_64
 Canon ScanGear MP v2 scanner utility and sane backend.
 
 %prep
-%autosetup -p1 -n %{base_name}
+%autosetup -p1 -n %{base_name}-%{version}
 
 %build
 %define builddir %{_builddir}/%{name}-%{version}
