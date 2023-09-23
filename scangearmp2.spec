@@ -9,7 +9,7 @@ Summary:        Canon ScanGear MP v2 scanner utility and sane backend
 License:        GPL and custom:canon
 URL:            https://github.com/ThierryHFR/scangearmp2
 Source0:	https://github.com/ThierryHFR/scangearmp2/archive/%{version}.tar.gz
-BuildRequires:  cmake libjpeg sane-backends-devel intltool gtk3-devel
+BuildRequires:  cmake gcc gtk3-devel libjpeg intltool sane-backends-devel
 Requires:	sane-backends gtk3
 
 # Define the architecture
